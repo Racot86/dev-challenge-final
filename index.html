@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="./src/css/styles.css" rel="stylesheet"/>
+    <title>Drone Assembler</title>
+</head>
+<body>
+
+<header class="header">
+    <p>Drone assembler</p>
+</header>
+
+<main>
+    <div class="working-area">
+        <div class="parts-panel">
+            <div class="part-list">
+                <div class="spare-card">
+                    <img src="">
+                    <div class="details">
+                        <p class="name"></p>
+                        <p class="detail"></p>
+                        <p class="price"></p>
+                    </div>
+                </div>
+
+            </div>
+            <p>Drag images to the grey part to assemble the drone</p>
+            <button class="export">Export used part list</button>
+        </div>
+        <div class="assy-panel">
+            <p class="total-price">Total price:</p>
+            <p class="progress">Drone assembled:</p>
+            <div class="drone-wireframe">
+                <div class="drop-zone"></div>
+                <div class="wireframe">
+                    <img class="drone-part frame" slot="0" alt="frame" />
+                    <img class="drone-part motor left-top" slot="0" alt="motor-left-up" />
+                    <img class="drone-part motor right-top" slot="0" alt="motor-right-up" />
+                    <img class="drone-part motor left-down" slot="0" alt="motor-left-down" />
+                    <img class="drone-part motor right-down" slot="0" alt="motor-right-down" />
+                    <img class="drone-part battery" slot="0" alt="battery" />
+                    <img class="drone-part controller" slot="0" alt="controller" />
+                    <img class="drone-part video-antenna" slot="0" alt="video-antenna" />
+                    <img class="drone-part radio-module" slot="0" alt="radio-module" />
+                    <img class="drone-part camera" slot="0" alt="camera" />
+                </div>
+            </div>
+            <div class="btn-container">
+                <p>Used spare parts</p>
+                <div class="used-spare-parts">
+                    <button class="btn-remove btn-frame">frame</button>
+                    <button class="btn-remove btn-motor1">motor left top</button>
+                    <button class="btn-remove btn-motor2">motor right top</button>
+                    <button class="btn-remove btn-motor3">motor left down</button>
+                    <button class="btn-remove btn-motor4">motor right down</button>
+                    <button class="btn-remove btn-battery">battery</button>
+                    <button class="btn-remove btn-controller">controller</button>
+                    <button class="btn-remove btn-antenna">antenna</button>
+                    <button class="btn-remove btn-radio">radio</button>
+                    <button class="btn-remove btn-camera">camera</button>
+                </div>
+                <button class="btn-reset">Reset all</button>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script type="module" src="./src/js/app.js"></script>
+</body>
+</html>
